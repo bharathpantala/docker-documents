@@ -62,13 +62,25 @@ We will discuss all these components in detail in the subsequent chapters.
 
 For installation of docker please go to docker official sites.
 ----------------------------------------------------------------------------------------------------------
+# centos / redhat :
+
+      # yum install -y <docker package>  ( package name you can google it. Mostly the name will be like this docker-ce)
+      
+### debian/ ubuntu:
+
+      # apt-get install docker.io
+
+
+
+Once you done with your installation. Please start the docker daemon or service 
+
 To start the docker :
 
 # service docker start   ---> start the docker daemon
 
-# chkconfig docker on   ---> to start docker daemon on boot. (in redhat)
+# chkconfig docker on   ---> to start docker daemon on boot. (in redhat or centos or fedora)
 
-# systemctl enable docker ---> to start docker daemon on boot (in ubuntu)
+# systemctl enable docker ---> to start docker daemon on boot (in ubuntu / debian)
 
 # service docker restart   ---> restart the docker daemon
 -------------------------------------------------------------------------------------------------------
